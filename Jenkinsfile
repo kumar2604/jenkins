@@ -26,5 +26,13 @@ pipeline {
                 echo 'this is deploy'
             }
         }
+        post{
+            always{
+                echo 'I will always say hello again!'
+            }
+            success{
+                echo 'I will run when pipeline is success'
+            }
+        }
     }
 }
